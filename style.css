@@ -1,0 +1,276 @@
+body{
+    max-width: 1440px;
+    height: 4060px;
+    margin: 0;
+    border: 1px solid red;
+}
+
+#container{
+    width: 85%;
+    margin: 0 7%;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+    border: 1px solid red;
+}
+
+#logo{
+    display: flex;
+    padding: 0;
+    font-weight: bold;
+}
+
+button{
+    background: white;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+#menu{
+    display: none;
+}
+
+#slogan{
+    margin-left: 15px;
+}
+
+#navbar >*{
+    border: none;
+    font-family: Overpass SemiBold;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.donation{
+    background: #F18F01;
+    padding: 7px 20px;
+    border-radius: 15px;
+    color: white;
+}
+
+.dropbtn{
+    border: none;
+    background: white;
+    font-family: Overpass SemiBold;
+    font-size: 14px;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background: #f1f1f1;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/* SECTION TOP */
+#top{
+    display: flex;
+    height: 532px;
+    max-width: 1440px;
+    margin: 0;
+    padding: 8.2% 0;
+    box-sizing: border-box;
+    border: 2px solid red;
+}
+
+#left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-right: 5%;
+    border: 2px solid red;
+}
+
+h1{
+    margin: 0 1px;
+    font-size: 262%;
+    font-family: 'IBM Plex Serif';
+}
+
+p{
+    font-family: 'Overpass', sans-serif;
+    font-size: 99%;
+    line-height: 30px;
+}
+
+#member{
+    color: white;
+    width: 180px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 3%;
+    background: #007299;
+    font-family: Overpass SemiBold;
+}
+
+#partner{
+    color: white;
+    width: 180px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 3%;
+    background: #1F2421;
+    font-family: Overpass SemiBold;
+}
+
+#right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* box-sizing: border-box; */
+    border: 2px solid red;
+}
+
+/* #pic1{
+    order: 1;
+    width: 256px;
+    height: 252px;
+    flex-grow: 1;
+}
+
+#pic2{
+    order: 2;
+    width: 410px;
+    height: 254px;
+    flex-grow: 2;
+    float: right;
+} */
+
+/* RESPONSIVITY */
+
+/* HEADER DIV */
+@media(max-width: 950px){
+    #container{
+        width: 100%;
+        margin: 0;
+    }
+
+    header{
+        height: 65px;
+        max-width: 940px;
+        margin: 0;
+    }
+}
+
+
+
+@media(max-width: 746px){
+    header{
+        display: flex;
+        flex-direction: column;
+        height: 85px;
+        border: 1px solid red;
+    }
+
+    #logo{
+        width: 35%;
+        justify-content: space-evenly;
+    }
+
+    #navbar{
+        justify-content: space-evenly;
+        width: 100%;
+        margin-right: 0;
+        border: 1px solid green;
+    }
+
+    #navbar > * {
+        margin: 0;
+    }
+}
+
+@media(max-width: 527px){
+    header{
+        height: 60px;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    #logo{
+        height: 6o0px;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        border: 1px solid red;
+    }
+
+    #slogan{
+        margin-left: 0px;
+    }
+
+    #menu{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-weight: bold;
+        border: 1px solid red;
+    }
+
+    #menu-bar{
+        display: none;
+    }
+
+    .dropdown-content{
+        position: absolute;
+        top:   20px;
+        left: -40px;
+        min-width: 140px;
+    }
+}
+
+/* TOP DIV */
+
+@media(max-width: 950px){
+    #left{
+        text-align: justify;
+        padding: 0;
+    }
+
+    h1{
+        font-size: 220%;
+    }
+    
+    p{
+        font-size: 90%;
+        line-height: 27px;
+    }
+
+    #right{
+        padding: 0;
+    }
+
+}
