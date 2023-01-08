@@ -5,27 +5,23 @@ body{
     border: 1px solid red;
 }
 
-#container{
-    width: 85%;
-    margin: 0 7%;
-    box-sizing: border-box;
-}
-
+/* header sECTION*/
 header{
+    width: 85%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 80px;
-    margin: 0;
+    margin: 0 7%;
     box-sizing: border-box;
     font-family: 'Overpass', sans-serif;
-    border: 1px solid red;
 }
 
 #logo{
     display: flex;
     padding: 0;
     font-weight: bold;
+    align-items: center;
 }
 
 button{
@@ -43,6 +39,7 @@ button{
 
 #slogan{
     margin-left: 15px;
+    font-size: 1em;
 }
 
 #navbar >*{
@@ -93,110 +90,154 @@ button{
     display: block;
 }
 
-/* SECTION TOP */
+/* TOP SECTION */
+
 #top{
-    display: flex;
-    height: 532px;
-    max-width: 1440px;
-    margin: 0;
+    width: 85%;
+    margin: 0 7%;
+    display: grid;
+    grid-template-columns: 46% 46%;
+    grid-column-gap: 8%;
     padding: 8.2% 0;
-    box-sizing: border-box;
-    border: 2px solid red;
+}    
+
+#left>*{
+    margin: 0;
 }
 
-#left{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    padding-right: 5%;
-    border: 2px solid red;
+#pic3{
+    width: 100%;
 }
 
-h1{
-    margin: 0 1px;
-    font-size: 262%;
-    font-family: 'IBM Plex Serif';
+#left-h1{
+    font-family: IBM Plex Serif;
+    font-size: 3.3vw;
 }
 
-p{
-    font-family: 'Overpass', sans-serif;
-    font-size: 99%;
-    line-height: 30px;
+#left-p{
+    font-family: Overpass;
+    font-size: 1.3vw;
+    margin: 0;
+    line-height: 6.5vh;
 }
 
 #member{
-    color: white;
-    width: 180px;
     height: 40px;
+    width: 180px;
+    left: 140px;
+    top: 533px;
+    color: white;
     border: none;
-    border-radius: 20px;
-    margin-right: 3%;
     background: #007299;
+    border-radius: 50px;
     font-family: Overpass SemiBold;
 }
 
 #partner{
-    color: white;
-    width: 180px;
     height: 40px;
+    width: 180px;
+    left: 140px;
+    top: 533px;
+    color: white;
     border: none;
-    border-radius: 20px;
-    margin-right: 3%;
-    background: #1F2421;
+    background: #000;
+    border-radius: 50px;
     font-family: Overpass SemiBold;
 }
 
-#right{
+#pic, #pic2{
+    display: none;
+}
+
+/* QUOTE SECTION */
+#quote-B{
+    width: 100%;
+    padding: 10vh 0;
+    color: aliceblue;
+    background: #007299;
+}
+
+#quote{
+    margin: 0 auto;
+    width: 55%;
+    text-align: justify;
+}
+
+#quote-h1{
+    color: white;
+    font-family: IBM Plex Serif;
+    margin: 0;
+    font-size: 3vw;
+}
+
+#quote-p{
     display: flex;
-    flex-direction: column;
-    width: 50%;
-    /* box-sizing: border-box; */
-    border: 2px solid red;
+    margin-top: 2%;
+    justify-content: space-between;
+    font-family: Overpass;
 }
 
-/* #pic1{
-    order: 1;
-    width: 256px;
-    height: 252px;
-    flex-grow: 1;
+#quote-p1{
+    margin: 0;
+    width: 72%;
+    line-height: 32px;
+    font-size: 1.5vw;
 }
 
-#pic2{
-    order: 2;
-    width: 410px;
-    height: 254px;
-    flex-grow: 2;
-    float: right;
-} */
+#quote-p2{
+    width: 28%;
+    text-align: center;
+}
+
+#quote-img{
+    width: 12vw;
+}
+
+#quote-p23{
+    font-weight: 700;
+    font-size: 1.5vw;
+}
+
+#quote-p24{
+    margin-top: 1%;
+    font-size: 1.5vw;
+}
+
+#quote-btn{
+    font-family: Overpass SemiBold;
+    height: 7vh;
+    width: 22vw;
+    font-size: 1.2vw;
+    margin-top: -5vh;
+    border-radius: 50px;
+    background: #1F2421;
+    color: #FFFFFF;
+    border: none;
+}
+
 
 /* RESPONSIVITY */
 
 /* HEADER DIV */
 @media(max-width: 950px){
-    #container{
-        width: 100%;
-        margin: 0;
-    }
 
     header{
         height: 65px;
-        max-width: 940px;
+        width: 100%;
         margin: 0;
     }
 }
-
-
 
 @media(max-width: 746px){
     header{
         display: flex;
         flex-direction: column;
         height: 85px;
-        border: 1px solid red;
     }
 
     #logo{
         width: 35%;
+        align-items: center;
         justify-content: space-evenly;
     }
 
@@ -204,7 +245,6 @@ p{
         justify-content: space-evenly;
         width: 100%;
         margin-right: 0;
-        border: 1px solid green;
     }
 
     #navbar > * {
@@ -224,11 +264,6 @@ p{
         width: 100%;
         justify-content: space-evenly;
         align-items: center;
-        border: 1px solid red;
-    }
-
-    #slogan{
-        margin-left: 0px;
     }
 
     #menu{
@@ -237,7 +272,6 @@ p{
         align-items: center;
         font-size: 16px;
         font-weight: bold;
-        border: 1px solid red;
     }
 
     #menu-bar{
@@ -252,25 +286,223 @@ p{
     }
 }
 
-/* TOP DIV */
+
+/* TOP RESPONSIVE DIV */
+@media(max-width: 1180px){
+    #top{
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 0%;
+    }    
+}
 
 @media(max-width: 950px){
-    #left{
-        text-align: justify;
-        padding: 0;
+
+    #top{
+        width: 100%;
+        margin: 0;
+        padding: 5.5% 0;
+    }    
+
+
+    #left-h1{
+        font-size: 4.1vw;
     }
 
-    h1{
-        font-size: 220%;
+    #partner{
+        width: 20vw;
     }
-    
-    p{
-        font-size: 90%;
-        line-height: 27px;
+
+    #member{
+        width: 20vw;
+    }
+}
+
+@media(max-width: 746px){
+
+    #top{
+        grid-template-rows: 43%;
+        grid-template-columns: 100%;
+        padding: 5.2% 0;
+        text-align: center;
+        margin: 0;
+    }
+
+    #left-h1{
+        font-size: 5vw;
+        line-height: 8.5vh;
+        margin-bottom: 2%;
+    }
+
+    #left-p{
+        font-size: 2.5vw;
+        line-height: 4.5vh;
+        margin-bottom: 1%;
+    }
+
+    #pic2, #pic3{
+        display: none;
+    }
+
+    #pic{
+        width: 50vw;
+        margin: 1vh auto;
+        display: block;
+    }
+
+    #partner, #member{
+        height: 40px;
+        width: 180px;
+    }
+}
+
+@media(max-width: 527px){
+    #top{
+        grid-template-rows: 53%;
+        grid-template-columns: 100%;
+        grid-row-gap: 0;
+    }
+
+    #left-h1{
+        font-size: 5.5vw;
+        line-height: 7.5vh;
+        margin-bottom: 2%;
+    }
+
+    #left-p{
+        font-size: 3vw;
+        line-height: 4.5vh;
+        margin-bottom: 1%;
+    }
+
+    #left{
+        margin-bottom: 0;
     }
 
     #right{
-        padding: 0;
+        margin-bottom: 0;
     }
 
+    #partner, #member{
+        height: 6vh;
+        width: 40vw;
+    }
+
+    #pic{
+        width: 40vw;
+        margin-top: 2vh;
+    }
+}
+
+@media(max-width: 400px){
+    #pic{
+        margin-top: 4vh;
+    }
+}
+
+/* QUOTE RESPONSIVE SECTION */
+
+@media(max-width: 950px){
+
+    #quote{
+        width: 80%;
+    }
+}
+
+@media(max-width: 746px){
+
+    #quote{
+        margin: auto;
+        width: 80%;
+        text-align: justify;
+    }
+
+    #quote-h1{
+        line-height: 6.5vh;
+        font-size: 3.9vw;
+    }
+
+   
+    #quote-p1{
+        width: 100%;
+        font-size: 2.0vw;
+        line-height: 4.5vh;
+    }
+
+    #quote-p2{
+        width: 35%;
+    }
+
+    #quote-p2 > *{
+        margin: 0;
+    }
+
+    #quote-img{
+        width: 16vw;
+    }
+
+    #quote-p23{
+        font-size: 2.0vw;
+    }
+
+    #quote-p24{
+        font-size: 2.0vw;
+    }
+
+    #quote-btn{
+        margin-top: 1vh;
+        height: 6vh;
+        width: 28vw;
+        font-size: 1.6vw;
+    }
+}
+
+@media(max-width: 527px){
+
+    #quote-B{
+        padding: 1vh 0;
+    }
+
+    #quote{
+        text-align: justify;
+        width: 95%;
+    }
+
+    #quote-h1{
+        font-size: 4.8vw;
+    }
+
+    #quote-p{
+        flex-direction: column;
+    }
+
+    #quote-p1{
+        font-size: 2.6vw;
+    }
+
+    #quote-p2{
+        margin: auto;
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #quote-img{
+        width: 19vw;
+    }
+
+    #quote-p23{
+        font-size: 3.0vw;
+    }
+
+    #quote-p24{
+        font-size: 3.0vw;
+    }
+
+    #quote-btn{
+        margin-top: 2vh;
+        height: 6vh;
+        width: 50vw;
+        font-size: 2.8vw;
+    }
 }
