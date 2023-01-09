@@ -5,7 +5,7 @@ body{
     border: 1px solid red;
 }
 
-/* header sECTION*/
+/* HEadER sECTION*/
 header{
     width: 85%;
     display: flex;
@@ -90,135 +90,7 @@ button{
     display: block;
 }
 
-/* TOP SECTION */
-
-#top{
-    width: 85%;
-    margin: 0 7%;
-    display: grid;
-    grid-template-columns: 46% 46%;
-    grid-column-gap: 8%;
-    padding: 8.2% 0;
-}    
-
-#left>*{
-    margin: 0;
-}
-
-#pic3{
-    width: 100%;
-}
-
-#left-h1{
-    font-family: IBM Plex Serif;
-    font-size: 3.3vw;
-}
-
-#left-p{
-    font-family: Overpass;
-    font-size: 1.3vw;
-    margin: 0;
-    line-height: 6.5vh;
-}
-
-#member{
-    height: 40px;
-    width: 180px;
-    left: 140px;
-    top: 533px;
-    color: white;
-    border: none;
-    background: #007299;
-    border-radius: 50px;
-    font-family: Overpass SemiBold;
-}
-
-#partner{
-    height: 40px;
-    width: 180px;
-    left: 140px;
-    top: 533px;
-    color: white;
-    border: none;
-    background: #000;
-    border-radius: 50px;
-    font-family: Overpass SemiBold;
-}
-
-#pic, #pic2{
-    display: none;
-}
-
-/* QUOTE SECTION */
-#quote-B{
-    width: 100%;
-    padding: 10vh 0;
-    color: aliceblue;
-    background: #007299;
-}
-
-#quote{
-    margin: 0 auto;
-    width: 55%;
-    text-align: justify;
-}
-
-#quote-h1{
-    color: white;
-    font-family: IBM Plex Serif;
-    margin: 0;
-    font-size: 3vw;
-}
-
-#quote-p{
-    display: flex;
-    margin-top: 2%;
-    justify-content: space-between;
-    font-family: Overpass;
-}
-
-#quote-p1{
-    margin: 0;
-    width: 72%;
-    line-height: 32px;
-    font-size: 1.5vw;
-}
-
-#quote-p2{
-    width: 28%;
-    text-align: center;
-}
-
-#quote-img{
-    width: 12vw;
-}
-
-#quote-p23{
-    font-weight: 700;
-    font-size: 1.5vw;
-}
-
-#quote-p24{
-    margin-top: 1%;
-    font-size: 1.5vw;
-}
-
-#quote-btn{
-    font-family: Overpass SemiBold;
-    height: 7vh;
-    width: 22vw;
-    font-size: 1.2vw;
-    margin-top: -5vh;
-    border-radius: 50px;
-    background: #1F2421;
-    color: #FFFFFF;
-    border: none;
-}
-
-
-/* RESPONSIVITY */
-
-/* HEADER DIV */
+/* HEADER RESPONSIVE DIV */
 @media(max-width: 950px){
 
     header{
@@ -286,6 +158,64 @@ button{
     }
 }
 
+/* TOP SECTION */
+
+#top{
+    width: 85%;
+    margin: 0 7%;
+    display: grid;
+    grid-template-columns: 46% 46%;
+    grid-column-gap: 8%;
+    padding: 8.2% 0;
+}    
+
+#left>*{
+    margin: 0;
+}
+
+#pic3{
+    width: 100%;
+}
+
+#left-h1{
+    font-family: IBM Plex Serif;
+    font-size: 3.3vw;
+}
+
+#left-p{
+    font-family: Overpass;
+    font-size: 1.3vw;
+    margin: 0;
+    line-height: 6.5vh;
+}
+
+#member{
+    height: 40px;
+    width: 180px;
+    left: 140px;
+    top: 533px;
+    color: white;
+    border: none;
+    background: #007299;
+    border-radius: 50px;
+    font-family: Overpass SemiBold;
+}
+
+#partner{
+    height: 40px;
+    width: 180px;
+    left: 140px;
+    top: 533px;
+    color: white;
+    border: none;
+    background: #000;
+    border-radius: 50px;
+    font-family: Overpass SemiBold;
+}
+
+#pic, #pic2{
+    display: none;
+}
 
 /* TOP RESPONSIVE DIV */
 @media(max-width: 1180px){
@@ -395,8 +325,74 @@ button{
 
 @media(max-width: 400px){
     #pic{
-        margin-top: 4vh;
+        margin-top: 4.5vh;
     }
+}
+
+/* QUOTE SECTION */
+#quote-B{
+    width: 100%;
+    padding: 10vh 0;
+    color: aliceblue;
+    background: #007299;
+}
+
+#quote{
+    margin: 0 auto;
+    width: 55%;
+    text-align: justify;
+}
+
+#quote-h1{
+    color: white;
+    font-family: IBM Plex Serif;
+    margin: 0;
+    font-size: 3vw;
+}
+
+#quote-p{
+    display: flex;
+    margin-top: 2%;
+    justify-content: space-between;
+    font-family: Overpass;
+}
+
+#quote-p1{
+    margin: 0;
+    width: 72%;
+    line-height: 32px;
+    font-size: 1.5vw;
+}
+
+#quote-p2{
+    width: 28%;
+    text-align: center;
+}
+
+#quote-img{
+    width: 12vw;
+}
+
+#quote-p23{
+    font-weight: 700;
+    font-size: 1.5vw;
+}
+
+#quote-p24{
+    margin-top: 1%;
+    font-size: 1.5vw;
+}
+
+#quote-btn{
+    font-family: Overpass SemiBold;
+    height: 7vh;
+    width: 22vw;
+    font-size: 1.2vw;
+    margin-top: -5vh;
+    border-radius: 50px;
+    background: #1F2421;
+    color: #FFFFFF;
+    border: none;
 }
 
 /* QUOTE RESPONSIVE SECTION */
@@ -406,6 +402,7 @@ button{
     #quote{
         width: 80%;
     }
+
 }
 
 @media(max-width: 746px){
@@ -464,7 +461,10 @@ button{
 
     #quote{
         text-align: justify;
-        width: 95%;
+        width: 90%;
+        
+        margin: 5%;
+        box-sizing: border-box;
     }
 
     #quote-h1{
@@ -476,7 +476,7 @@ button{
     }
 
     #quote-p1{
-        font-size: 2.6vw;
+        font-size: 2.3vw;
     }
 
     #quote-p2{
@@ -492,17 +492,361 @@ button{
     }
 
     #quote-p23{
-        font-size: 3.0vw;
+        font-size: 2.6vw;
     }
 
     #quote-p24{
-        font-size: 3.0vw;
+        font-size: 2.6vw;
     }
 
     #quote-btn{
         margin-top: 2vh;
         height: 6vh;
-        width: 50vw;
-        font-size: 2.8vw;
+        width: 45vw;
+        font-size: 2.3vw;
     }
 }
+
+/* SECTIONS SECTION */
+
+#section{
+    width: 85%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+#section2{
+    margin: 5% auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#section2-2{
+    margin: 5% auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+#sect-img{
+    width: 45%;
+}
+
+#section3{
+    margin: 0;
+    padding: 0;
+    width: 45%;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+#sects-btn{
+    border: none;
+    background: #007299;
+    color: white;
+    font-family: Overpass SemiBold;
+    height: 35px;
+    font-size: 2.6vh;
+    padding: 1% 3.75%;
+    border-radius: 50px;
+}
+
+#sect-h2{
+    margin: 0;
+    width: 100%;
+    font-size: 25px;
+    font-family: IBM Plex Serif;
+    box-sizing: border-box;
+}
+
+#sect-p{
+    width: 100%;
+    font-size: 15px;
+    line-height: 5.5vh;
+    font-family: 'Overpass', sans-serif;
+    box-sizing: border-box;
+}
+
+/* SECTIONS RESPONSIVE SECTION */
+
+@media(max-width: 950px){
+
+    #sect-h2{
+        margin: 0;
+        width: 100%;
+        font-size: 18px;
+        box-sizing: border-box;
+    }
+
+    #sect-p{
+        width: 100%;
+        font-size: 12px;
+        font-family: 'Overpass', sans-serif;
+        box-sizing: border-box;
+        line-height: 4.0vh;
+    }
+}
+
+@media(max-width: 746px){
+
+    #sect-h2{
+        font-size: 16px;
+    }
+
+    #sect-p{
+        font-size: 10px;
+        line-height: 3.5vh;
+    }
+
+    #sects-btn{
+        height: 4.5vh;
+        font-size: 2.0vh;
+    }
+
+}
+
+@media(max-width: 527px){
+
+    #section{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #section2{
+        width: 100%;
+        margin: 4% 0;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #sect-h2{
+        margin: 3% auto;
+        width: 70%;
+        font-size: 13px;
+        text-align: center; 
+    }
+
+    #section2-2{
+        margin: 4% 0;
+        flex-direction: column;
+    }
+
+    #sect-img{
+        width: 45vw;
+    }
+
+    #section3{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: justify;
+        box-sizing: border-box;
+    }
+
+    #sect-p{
+        margin: 3% auto;
+        width: 70%;
+        font-size: 2.3vw;
+        line-height: 3.8vh;
+    }
+
+    #sects-btn{
+        margin: 3% auto;
+        height: 30px;
+        display: block;
+        font-size: 2.3vw;
+        padding: 0 2.75%;
+        border-radius: 50px;
+    }
+
+}
+
+@media(max-width: 375px){
+
+    #section{
+        margin: 0 auto;
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    #section2{
+        width: 100%;
+        margin: 10% 0;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #section2-2{
+        margin: 10% 0;
+        flex-direction: column;
+    }
+
+    #sect-img{
+        width: 60vw;
+    }
+
+    #section3{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: justify;
+        box-sizing: border-box;
+        text-align: center; 
+    }
+
+    #sect-h2{
+        margin: 6% 0;
+        width: 100%;
+        font-size: 20px;
+        font-family: IBM Plex Serif;
+        box-sizing: border-box;
+    }
+
+    #sect-p{
+        width: 100%;
+        margin: 6% 0;
+        font-size: 2.3vw;
+        font-family: 'Overpass', sans-serif;
+        box-sizing: border-box;
+        line-height: 3.5vh;
+        text-align: justify; 
+    }
+
+    #sects-btn{
+        border: none;
+        background: #007299;
+        color: white;
+        font-family: Overpass SemiBold;
+        height: 30px;
+        font-size: 2.3vw;
+        padding: 0 2.75%;
+        border-radius: 50px;
+    }
+}
+
+/* TESTIMONIal SECTION */
+#testimonial-base{
+    width: 85%;
+    height: 65vh;
+    margin: 2% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E8F6FB;
+}
+
+#testimonial-base1{
+    width: 75%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#testimonial{
+    width: 80%;
+}
+
+#test-img{
+    width: 10vw;
+    height: 24vh;
+}
+
+#testimony{
+    margin-top: 0;
+    margin-bottom: 10vh;
+    font-size: 2.4vw;
+    font-family: IBM Plex Serif;
+}
+
+#test-name{
+    margin: 0;
+    font-size: 1.5vw;
+    font-family: Overpass SemiBold;
+}
+
+ #test-desig {
+    margin-top: 1%;
+    font-size: 1.5vw;
+    font-family: 'Overpass', sans-serif;
+}
+
+#test-arrows{
+    margin-top: 8%;
+}
+
+#test-vec1{
+    margin-left: 2%;
+}
+/* TESTIMONIal RESPONSIVE SECTION */
+
+@media(max-width: 950px){
+    #testimonial-base{
+        width: 85%;
+        height: 55vh;
+    }
+
+    #test-img{
+        width: 10vw;
+        height: 18vh;
+    }
+
+    #testimonial-base1{
+        height: 40vh;
+    }
+}
+
+@media(max-width: 746px){
+    #testimonial-base{
+        width: 85%;
+        height: 45vh;
+    }
+
+    #testimonial-base1{
+        width: 85%;
+        height: 30vh;
+    }
+
+    #test-img{
+        width: 10vw;
+        height: 15vh;
+    }
+    
+    #testimony{
+        margin-bottom: 5vh;
+        font-size: 2.4vw;
+    }
+    
+    #test-name{
+        margin-top: 6vh;
+        font-size: 1.5vw;
+    }
+    
+    #test-desig {
+        font-size: 1.5vw;
+    }
+
+    #test-arrows{
+        margin-top: 6vh;
+        font-size: 1.5vw;
+    }
+
+    #test-vec1, #test-vec2{
+        width: 3%;
+    }
+
+    #test-vec1{
+        margin-left: 3%;
+    }
+}
+
+
