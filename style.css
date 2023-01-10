@@ -738,7 +738,7 @@ button{
 #testimonial-base{
     width: 85%;
     height: 65vh;
-    margin: 2% auto;
+    margin: 5% auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -849,4 +849,190 @@ button{
     }
 }
 
+@media(max-width: 527px){
 
+    #testimonial-base1{
+        width: 82%;
+        height: 23vh;
+        justify-content: space-between;
+    }
+
+    #testimonial{
+        width: 75%;
+    }
+    
+    #test-img{
+        width: 15vw;
+        height: 15vh;
+    }
+
+    #testimony{
+        font-size: 2.5vw;
+    }
+
+    #test-name{
+        margin-top: 1.5vh;
+        font-size: 1.8vw;
+    }
+    
+    #test-desig {
+        font-size: 1.8vw;
+    }
+
+    #test-arrows{
+        margin-top: 4vh;
+    }
+}
+
+@media(max-width: 375px){
+
+    #testimonial-base{
+        width: 90%;
+        height: 35vh;
+    }
+
+    #testimonial-base1{
+        width: 90%;
+        height: 90%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #testimonial{
+        width: 90%;
+    }
+
+    #testimony{
+        margin-top: 3.5vh;
+        margin-bottom: 3.5vh;
+        font-size: 3.5vw;
+    }
+
+    #test-name{
+        margin-top: 1.5vh;
+        font-size: 2.8vw;
+    }
+    
+    #test-desig {
+        font-size: 2.8vw;
+    }
+
+    #test-arrows{
+        display: none;   
+    }
+
+    #test-img{
+        width: 15vw;
+        height: 10vh;
+    }
+}
+
+/* FOOTER SECTION */
+    footer{
+        color: #fff;
+        background: #000;
+        width: 100%;
+        height: 90vh;
+        display: flex; 
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: 12px solid royalblue;
+    }
+
+    #footer{
+        width: 85%;
+        height: 55%;
+        display: flex; 
+        justify-content: space-between;
+        box-sizing: border-box;
+        border: 10px solid white;
+    }
+
+    #footer > *{
+    }
+
+    #footer div{
+        border: 1px solid rgb(246, 7, 7);
+    }
+
+    #footer p{
+        line-height: 5vh;
+        font-family: 'Overpass', sans-serif;
+    }
+
+    #foot-h3{
+        font-family: IBM Plex Serif;
+    }
+
+    #company{
+        width: 30%;
+        font-size: 1vw;
+    }
+
+    #contact{
+        width: 25%;
+        font-size: 1vw;
+        line-height: 5vh;
+    }
+
+    #links{
+        width: 10%;
+        font-size: 1vw;
+    }
+
+    #newsletter{
+        width: 35%;
+        font-size: 1vw;
+    }
+
+
+    .comp-btn{
+        color: white;
+        background: #F18F01;
+        border-radius: 50px;
+        padding: 6px 20px;
+        font-family: Overpass SemiBold;
+    }
+
+    #copyright{
+        margin-right: 73.5%;
+        font-family: 'Overpass', sans-serif;
+    }
+
+    .custom-search{
+        position: relative;
+        width: 300px;
+    }
+
+    .custom-search-input{
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 100px;
+        padding: 10px 100px 10px 20px;
+        line-height: 1;
+        box-sizing: border-box;
+        outline: none;
+    }
+
+    .custom-search-button{
+        position: relative;
+        right: 3px;
+        left: 180px;
+        bottom: 35px;
+        background: #000;
+        color: #fff;
+        outline: none;
+        margin: 0;
+        padding: 6px 20px;
+        border-radius: 100px;
+        z-index: 2;
+        font-family: Overpass SemiBold;
+    }
+
+
+
+/* FOOTER RESPONSIVE SECTION */
