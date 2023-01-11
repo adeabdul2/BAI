@@ -1119,6 +1119,13 @@ button{
     }
 }
 
+@media(max-width: 690px){
+
+    .custom-search-button{
+        left: 55px;
+    }
+}
+
 @media(max-width: 527px){
     footer{
         height: 50vh;
